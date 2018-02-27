@@ -1,24 +1,28 @@
-# README
+# Football Demo!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails new football_app
+rails g model Player name:string number:integer team:string position:string
 
-Things you may want to cover:
+Remember to rake db:migrate!!!
 
-* Ruby version
+create players_controller
+create players folder in views, and index.html.erb in your new players folder
 
-* System dependencies
+Remember to set your routes!
+- root 'players#index'
 
-* Configuration
+Play around with your rails console (rails c)
 
-* Database creation
+Examples:
+Player.create, Player.destroy
 
-* Database initialization
+Remember: new & save == create
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Player.create(name: "Aaron Rodgers", number: 12, team: "Green Bay Packers", position: "Quarterback")
+OR
+p = Player.new
+p.name = "Aaron Rodgers"
+p.number = 12
+p.team = "Green Bay Packers"
+p.position = "Quarterback"
+p.save
