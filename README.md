@@ -26,3 +26,14 @@ p.number = 12
 p.team = "Green Bay Packers"
 p.position = "Quarterback"
 p.save
+
+Files Modified:
+
+- `config/routes.rb`
+- `app/views/playeers/index.html.erb`
+- `app/controllers/players_controller.rb`
+
+Files Generated:
+
+- `app/db/schema.rb`
+- `app/models/player.rb`
