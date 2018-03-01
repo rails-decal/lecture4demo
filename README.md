@@ -5,6 +5,8 @@ rails g model Player name:string number:integer team:string position:string
 
 **Remember to rake db:migrate!!!**
 
+rails g controller Players index<br />
+OR<br />
 create players_controller<br />
 create players folder in views, and index.html.erb in your new players folder
 
